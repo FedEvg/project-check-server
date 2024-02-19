@@ -1,0 +1,29 @@
+{
+  "name": "jekamars/check-servers",
+  "description": "A project created to track whether the server is alive or not.",
+  "type": "project",
+  "license": "MIT",
+  "autoload": {
+    "psr-4": {
+      "Jekamars\\CheckServers\\": "src/"
+    },
+    "classmap": [
+      "src/"
+    ]
+  },
+  "authors": [
+    {
+      "name": "FedEvg",
+      "email": "fedchenko703@gmail.com"
+    }
+  ],
+  "minimum-stability": "stable",
+  "require": {
+    "ext-pdo": "*",
+    "slim/slim": "*",
+    "slim/psr7": "*",
+    "twig/twig": "*",
+    "php-di/php-di": "*",
+    "ext-curl": "*"
+  }
+}
