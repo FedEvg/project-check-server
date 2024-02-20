@@ -1,6 +1,6 @@
 <?php
 
-namespace Jekamars\CheckServer;
+namespace Jekamars\CheckServer\Entity;
 
 use Jekamars\CheckServers\Database;
 

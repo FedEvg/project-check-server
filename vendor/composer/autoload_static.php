@@ -130,6 +130,9 @@ class ComposerStaticInit6f4111b2d370cb52a2722ba4d5d911c8
     public static $classMap = array (
         'Attribute' => __DIR__ . '/..' . '/symfony/polyfill-php80/Resources/stubs/Attribute.php',
         'Composer\\InstalledVersions' => __DIR__ . '/..' . '/composer/InstalledVersions.php',
+        'Jekamars\\CheckServer\\Entity\\Server' => __DIR__ . '/../..' . '/src/Entity/Server.php',
+        'Jekamars\\CheckServer\\Factory\\HandlerServerFactory' => __DIR__ . '/../..' . '/src/Factory/HandlerServerFactory.php',
+        'Jekamars\\CheckServer\\Factory\\iHandlerServerFactory' => __DIR__ . '/../..' . '/src/Factory/iHandlerServerFactory.php',
         'Jekamars\\CheckServer\\Route\\Add' => __DIR__ . '/../..' . '/src/Route/Add.php',
         'Jekamars\\CheckServer\\Route\\Create' => __DIR__ . '/../..' . '/src/Route/Create.php',
         'Jekamars\\CheckServer\\Route\\Delete' => __DIR__ . '/../..' . '/src/Route/Delete.php',
@@ -138,7 +141,6 @@ class ComposerStaticInit6f4111b2d370cb52a2722ba4d5d911c8
         'Jekamars\\CheckServer\\Route\\Update' => __DIR__ . '/../..' . '/src/Route/Update.php',
         'Jekamars\\CheckServer\\Route\\UpdateStatusServer' => __DIR__ . '/../..' . '/src/Route/UpdateStatusServer.php',
         'Jekamars\\CheckServer\\Route\\UpdateStatusServers' => __DIR__ . '/../..' . '/src/Route/UpdateStatusServers.php',
-        'Jekamars\\CheckServer\\Server' => __DIR__ . '/../..' . '/src/Entity/Server.php',
         'Jekamars\\CheckServers\\Database' => __DIR__ . '/../..' . '/src/Database.php',
         'Jekamars\\CheckServers\\HandlerServer' => __DIR__ . '/../..' . '/src/HandlerServer.php',
         'PhpToken' => __DIR__ . '/..' . '/symfony/polyfill-php80/Resources/stubs/PhpToken.php',

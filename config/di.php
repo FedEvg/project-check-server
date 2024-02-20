@@ -1,7 +1,10 @@
 <?php
 
 
-use Jekamars\CheckServer\Server;
+use Jekamars\CheckServer\Entity\Server;
+use Jekamars\CheckServer\Factory\HandlerServerFactory;
+use Jekamars\CheckServer\Factory\iHandlerServerFactory;
+
 use Jekamars\CheckServers\Database;
 use src\Services\Notification\iNotification;
 use src\Services\Notification\Telegram;
@@ -26,6 +29,8 @@ return [
 
     Environment::class => autowire()
         ->constructorParameter('loader', get(FilesystemLoader::class)),
+
+    iHandlerServerFactory::class => get(HandlerServerFactory::class),
 
     Telegram::class => autowire()
         ->constructorParameter('token', '***')

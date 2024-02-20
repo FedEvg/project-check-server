@@ -3,7 +3,7 @@
 namespace Jekamars\CheckServer\Route;
 
 use Generator;
-use Jekamars\CheckServer\Server;
+use Jekamars\CheckServer\Entity\Server;
 use Jekamars\CheckServers\HandlerServer;
 use Psr\Http\Message\RequestInterface as Request;
 use Psr\Http\Message\ResponseInterface as Response;

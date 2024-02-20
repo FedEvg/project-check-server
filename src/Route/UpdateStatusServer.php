@@ -2,8 +2,9 @@
 
 namespace Jekamars\CheckServer\Route;
 
-use Jekamars\CheckServer\Server;
-use Jekamars\CheckServers\HandlerServer;
+
+use Jekamars\CheckServer\Factory\iHandlerServerFactory;
+use Jekamars\CheckServer\Entity\Server;
 use Psr\Http\Message\RequestInterface as Request;
 use Psr\Http\Message\ResponseInterface as Response;
 use src\Services\Notification\iNotification;
@@ -12,7 +13,8 @@ class UpdateStatusServer
 {
     public function __construct(
         private Server        $server,
-        private iNotification $notification
+        private iNotification $notification,
+        private iHandlerServerFactory $handlerServerFactory
     )
     {
     }
@@ -24,7 +26,7 @@ class UpdateStatusServer
     {
         $server = $this->server->getServerById((int)$args['id']);
 
-        $handlerServer = new HandlerServer($server['name']);
+        $handlerServer = $this->handlerServerFactory->create($server['name']);
 
         $resultPing = $handlerServer->pingServer();
 

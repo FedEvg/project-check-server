@@ -2,7 +2,7 @@
 
 namespace Jekamars\CheckServer\Route;
 
-use Jekamars\CheckServer\Server;
+use Jekamars\CheckServer\Entity\Server;
 use Psr\Http\Message\RequestInterface as Request;
 use Psr\Http\Message\ResponseInterface as Response;
 

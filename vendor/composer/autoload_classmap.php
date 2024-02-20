@@ -8,6 +8,9 @@ $baseDir = dirname($vendorDir);
 return array(
     'Attribute' => $vendorDir . '/symfony/polyfill-php80/Resources/stubs/Attribute.php',
     'Composer\\InstalledVersions' => $vendorDir . '/composer/InstalledVersions.php',
+    'Jekamars\\CheckServer\\Entity\\Server' => $baseDir . '/src/Entity/Server.php',
+    'Jekamars\\CheckServer\\Factory\\HandlerServerFactory' => $baseDir . '/src/Factory/HandlerServerFactory.php',
+    'Jekamars\\CheckServer\\Factory\\iHandlerServerFactory' => $baseDir . '/src/Factory/iHandlerServerFactory.php',
     'Jekamars\\CheckServer\\Route\\Add' => $baseDir . '/src/Route/Add.php',
     'Jekamars\\CheckServer\\Route\\Create' => $baseDir . '/src/Route/Create.php',
     'Jekamars\\CheckServer\\Route\\Delete' => $baseDir . '/src/Route/Delete.php',
@@ -16,7 +19,6 @@ return array(
     'Jekamars\\CheckServer\\Route\\Update' => $baseDir . '/src/Route/Update.php',
     'Jekamars\\CheckServer\\Route\\UpdateStatusServer' => $baseDir . '/src/Route/UpdateStatusServer.php',
     'Jekamars\\CheckServer\\Route\\UpdateStatusServers' => $baseDir . '/src/Route/UpdateStatusServers.php',
-    'Jekamars\\CheckServer\\Server' => $baseDir . '/src/Entity/Server.php',
     'Jekamars\\CheckServers\\Database' => $baseDir . '/src/Database.php',
     'Jekamars\\CheckServers\\HandlerServer' => $baseDir . '/src/HandlerServer.php',
     'PhpToken' => $vendorDir . '/symfony/polyfill-php80/Resources/stubs/PhpToken.php',
